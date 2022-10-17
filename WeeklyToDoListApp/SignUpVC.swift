@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignUpVC: UIViewController {
     @IBOutlet weak var emailTextFieldSignUpScreen: UITextField!
@@ -15,14 +16,45 @@ class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
     @IBAction func signUpButtonSigUpScreen(_ sender: Any) {
         
-        performSegue(withIdentifier: "toTableViewVC", sender: nil)
+        if emailTextFieldSignUpScreen.text != "" && usernameTextFieldSignUpScreen.text != "" && passwordTextFieldSignUpScreen.text != "" {
+            
+            let user = PFUser()
+            
+            user.email = emailTextFieldSignUpScreen.text
+            user.username = usernameTextFieldSignUpScreen.text
+            user.password = passwordTextFieldSignUpScreen.text
+            user.signUpInBackground { success, error in
+                if error != nil {
+                    
+                    self.makeAlert(tittleInput: "Error", messageInput: error?.localizedDescription ?? "Error")
+                }
+                    
+                    self.performSegue(withIdentifier: "toBackLoginScreen", sender: nil)
+                
+            }
+            
+            
+            
+        } else {
+            
+            self.makeAlert(tittleInput: "Error", messageInput: "Please fill sections!")
+        }
+        
+        
+        
     }
-    
+    func makeAlert(tittleInput: String, messageInput: String) {
+        
+        let alert = UIAlertController(title: tittleInput, message: messageInput, preferredStyle: UIAlertController.Style.alert)
+        let okButton = UIAlertAction(title: tittleInput, style: UIAlertAction.Style.default, handler: nil)
+        self.present(alert, animated: true)
+        alert.addAction(okButton)
+        
+    }
 
 }

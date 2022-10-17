@@ -17,6 +17,9 @@
 		ED1DCF7728FD793900475525 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1DCF7628FD793900475525 /* SignUpVC.swift */; };
 		ED1DCF7B28FD79F200475525 /* loginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1DCF7A28FD79F200475525 /* loginScreenVC.swift */; };
 		ED1DCF7D28FD7E2700475525 /* addPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1DCF7C28FD7E2700475525 /* addPlanVC.swift */; };
+		ED1DCF7F28FD993000475525 /* dayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1DCF7E28FD992F00475525 /* dayVC.swift */; };
+		ED3B9FCA28FDF5F90078A620 /* planModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B9FC928FDF5F90078A620 /* planModel.swift */; };
+		ED3B9FCC28FE039F0078A620 /* resultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3B9FCB28FE039F0078A620 /* resultVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		ED1DCF7628FD793900475525 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		ED1DCF7A28FD79F200475525 /* loginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginScreenVC.swift; sourceTree = "<group>"; };
 		ED1DCF7C28FD7E2700475525 /* addPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPlanVC.swift; sourceTree = "<group>"; };
+		ED1DCF7E28FD992F00475525 /* dayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dayVC.swift; sourceTree = "<group>"; };
+		ED3B9FC928FDF5F90078A620 /* planModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planModel.swift; sourceTree = "<group>"; };
+		ED3B9FCB28FE039F0078A620 /* resultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 				ED1DCF7A28FD79F200475525 /* loginScreenVC.swift */,
 				ED1DCF7628FD793900475525 /* SignUpVC.swift */,
 				ED1DCF7C28FD7E2700475525 /* addPlanVC.swift */,
+				ED1DCF7E28FD992F00475525 /* dayVC.swift */,
+				ED3B9FC928FDF5F90078A620 /* planModel.swift */,
+				ED3B9FCB28FE039F0078A620 /* resultVC.swift */,
 				ED1DCF6828FD73BB00475525 /* Main.storyboard */,
 				ED1DCF6B28FD73BF00475525 /* Assets.xcassets */,
 				ED1DCF6D28FD73BF00475525 /* LaunchScreen.storyboard */,
@@ -219,7 +228,10 @@
 				ED1DCF7728FD793900475525 /* SignUpVC.swift in Sources */,
 				ED1DCF6728FD73BB00475525 /* tableView.swift in Sources */,
 				ED1DCF7D28FD7E2700475525 /* addPlanVC.swift in Sources */,
+				ED1DCF7F28FD993000475525 /* dayVC.swift in Sources */,
 				ED1DCF6328FD73BB00475525 /* AppDelegate.swift in Sources */,
+				ED3B9FCC28FE039F0078A620 /* resultVC.swift in Sources */,
+				ED3B9FCA28FDF5F90078A620 /* planModel.swift in Sources */,
 				ED1DCF6528FD73BB00475525 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
