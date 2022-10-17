@@ -16,6 +16,7 @@
 		ED1DCF6F28FD73BF00475525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED1DCF6D28FD73BF00475525 /* LaunchScreen.storyboard */; };
 		ED1DCF7728FD793900475525 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1DCF7628FD793900475525 /* SignUpVC.swift */; };
 		ED1DCF7B28FD79F200475525 /* loginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1DCF7A28FD79F200475525 /* loginScreenVC.swift */; };
+		ED1DCF7D28FD7E2700475525 /* addPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1DCF7C28FD7E2700475525 /* addPlanVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		ED1DCF7028FD73BF00475525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED1DCF7628FD793900475525 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		ED1DCF7A28FD79F200475525 /* loginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginScreenVC.swift; sourceTree = "<group>"; };
+		ED1DCF7C28FD7E2700475525 /* addPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPlanVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				ED1DCF6628FD73BB00475525 /* tableView.swift */,
 				ED1DCF7A28FD79F200475525 /* loginScreenVC.swift */,
 				ED1DCF7628FD793900475525 /* SignUpVC.swift */,
+				ED1DCF7C28FD7E2700475525 /* addPlanVC.swift */,
 				ED1DCF6828FD73BB00475525 /* Main.storyboard */,
 				ED1DCF6B28FD73BF00475525 /* Assets.xcassets */,
 				ED1DCF6D28FD73BF00475525 /* LaunchScreen.storyboard */,
@@ -215,6 +218,7 @@
 				ED1DCF7B28FD79F200475525 /* loginScreenVC.swift in Sources */,
 				ED1DCF7728FD793900475525 /* SignUpVC.swift in Sources */,
 				ED1DCF6728FD73BB00475525 /* tableView.swift in Sources */,
+				ED1DCF7D28FD7E2700475525 /* addPlanVC.swift in Sources */,
 				ED1DCF6328FD73BB00475525 /* AppDelegate.swift in Sources */,
 				ED1DCF6528FD73BB00475525 /* SceneDelegate.swift in Sources */,
 			);
