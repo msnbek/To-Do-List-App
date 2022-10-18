@@ -100,6 +100,50 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         
     }
+    /* func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            
+            var objectDelete:PFObject = PFObject(className: "Plan")
+            objectDelete = selectedIdArray[indexPath.row] as! PFObject
+            objectDelete.deleteInBackground { success, error in
+                if error != nil {
+                    
+                    self.makeAlert(tittleInput: "error", messageInput: error?.localizedDescription ?? "Error!")
+                }else {
+                    
+                   self.selectedIdArray.remove(at: indexPath.row)
+                    //tableView.deleteRows(at: [IndexPath.row], with: UITableView.RowAnimation.fade)
+                    print("deleted")
+                }
+            }
+            
+       
+        }
+        
+        if editingStyle == .delete {
+            let query = PFQuery(className: "Plan")
+    query.order(byDescending: "createdAt")
+    query.whereKey("objectId", equalTo: (PFUser.current()?.username)!)
+    query.findObjectsInBackground { objects, error in
+        if error == nil {
+
+            for object in objects! {
+                self.selectedIdArray.remove(at: indexPath.row)
+                object.deleteInBackground()
+            }
+        }
+        self.tableView.reloadData()
+    }
+            
+        }
+        
+        //let Log:PFObject = self.LogData.objectAtIndex(indexPath.row) as! PFObject
+        //Log.deleteInBackground()
+                    
+
+    }
+     */
+    
     
     
     func makeAlert(tittleInput: String, messageInput: String) {
