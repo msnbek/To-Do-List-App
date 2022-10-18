@@ -21,6 +21,13 @@ class addPlanVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         dayLabelText.text = addPlanVcDayName
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hiddenKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    @objc func hiddenKeyboard() {
+        
+        view.endEditing(true)
     }
     
     @IBAction func saveButtonAddPlanVC(_ sender: Any) {
